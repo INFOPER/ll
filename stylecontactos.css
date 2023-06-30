@@ -369,7 +369,7 @@ a.Sobre:hover {
   }
   
 a.Contacto:hover {
-    color: #d8db17;
+    color: #babd00;
   }
 
 /* Hero */
@@ -485,7 +485,7 @@ section#hero {
   transition: all 0.3s ease;
 }
 .redes-icons a.facebook:hover {
-  color: #d8db17;
+  color: #aeb100;
 }
 .redes-icons a.instagram:hover {
   color: #33a124;
@@ -497,7 +497,7 @@ section#hero {
 color: #f82525;
 }
 .color-yellow {
-  color: #d8db17;
+  color: #aeb100;
 }
 
 
@@ -566,13 +566,13 @@ footer{
     width: 100%;
     font-size: 18px;
     color: #d9d9d9;
-    background: #d8db17;
+    background: #8b8b00;
     outline: none;
     border-radius: 5px;
     letter-spacing: 1px;
     cursor: pointer;
     margin-top: 12px;
-    border: 2px solid #d8db17;
+    border: 2px solid #8b8b00;
     transition: all 0.3s ease-in-out;
   }
   .content .right input[type="submit"]:hover{
@@ -624,12 +624,6 @@ footer{
   }
   footer a.twitter:hover {
     color: #2675ec;
-  }
-  footer a.youtube:hover {
-    color: #f82525;
-  }
-  footer a.tiktok:hover {
-    color: #81D4FA;
   }
   @media (max-width:1100px) {
     footer .content .middle{

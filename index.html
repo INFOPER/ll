@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -163,13 +163,14 @@
         <span class="dot" onclick="currentSlide(5)"></span>
         <span class="dot" onclick="currentSlide(6)"></span>
       </div>
+    </div>
       
       
       
       
       <div class="descricao">
 				<p><h2>Porquê PER?</h2></p>
-				<p>PER significa "Produtos Écologicos e Reciclados" e está amplamente ligado ao "Princípio dos 3 Rs": Reduzir, Reutilizar e Reciclar.<br>Produtos ecológicos e reciclados estão intimamente ligados a este princípio, pois são formas de implementar estas três ações na prática.<br> Reduzir: Os produtos ecológicos são projetados para reduzir o impacto ambiental.<br> Reutilizar: A reutilização de produtos é uma forma importante de reduzir a quantidade de resíduos que produzimos.<br> Reciclar: A reciclagem é o processo de transformação de materiais usados em novos produtos. </p>
+				<p>PER significa "Produtos Écologicos e Reciclados" e está amplamente ligado ao "Princípio dos 3 Rs": Reduzir, Reutilizar e Reciclar.<br>Produtos ecológicos e reciclados estão intimamente ligados a este princípio, pois são formas de implementar estas três ações na prática. Reduzir: Os produtos ecológicos são projetados para reduzir o impacto ambiental. Reutilizar: A reutilização de produtos é uma forma importante de reduzir a quantidade de resíduos que produzimos. Reciclar: A reciclagem é o processo de transformação de materiais usados em novos produtos. </p>
 				<a href="sobrenos.html" class="botao1">Saiba mais</a><br>
 			</div>
       <div class="descricao1">
@@ -194,6 +195,24 @@
 				<a href="loja.html" class="botao2">Loja</a><br>
 			</div>
       <div class="descricao1">
+				<p><h2>Algumas dicas de como adotar um estilo de vida mais sustentável</h2></p>
+				<p>Consciencialização e Educação: Informe-se sobre as questões ambientais atuais, como as alterações climáticas, poluição, perda de biodiversidade e esgotamento dos recursos naturais. Compreender a importância da sustentabilidade é o primeiro passo para agir de forma consciente.<p>
+
+Redução do Consumo: Repense os seus hábitos de consumo e evite o desperdício. Compre apenas o necessário, opte por produtos duradouros e de qualidade, evite o uso excessivo de embalagens descartáveis e dê preferência a marcas e produtos com práticas sustentáveis.<br><p>
+
+Reutilização e Reciclagem: Dê uma segunda vida aos objetos que possui. Pratique a reutilização, consertando ou doando objetos antes de os descartar. Separe corretamente o lixo para reciclagem, garantindo que os materiais sejam encaminhados para o processo adequado.<br><p>
+
+Poupança de Energia: Reduza o consumo de energia na sua casa. Desligue os aparelhos eletrónicos quando não estão em uso, substitua as lâmpadas por versões de baixo consumo, aproveite a luz natural e adote práticas de eficiência energética, como isolamento térmico e uso de painéis solares.<br><p>
+
+Transporte Sustentável: Opte por meios de transporte mais sustentáveis, como caminhar, usar bicicleta ou transportes públicos. Se possível, partilhe boleias ou considere a utilização de veículos elétricos.<br><p>
+
+Alimentação Responsável: Faça escolhas alimentares conscientes. Prefira alimentos orgânicos e de origem local, reduza o consumo de carne e evite o desperdício de alimentos. Uma dieta equilibrada e baseada em vegetais pode ter um impacto significativo na redução da pegada ambiental.<br><p>
+
+Conservação da Água: Poupe água nas suas atividades diárias. Tome banhos mais curtos, feche a torneira enquanto escova os dentes, repare fugas de água e reutilize-a sempre que possível, como para regar plantas.<br><p>
+
+Envolvimento Comunitário: Participe em projetos locais de sustentabilidade, associações de bairro ou grupos que promovam práticas sustentáveis. Partilhe os seus conhecimentos e experiências para incentivar outros a adotarem um estilo de vida mais sustentável.</p>
+			</div>
+      <div class="descricao1">
 				<p><h2>O que fizemos o que deveríamos ter feito e o que podemos fazer agora?</h2></p>
 				<p>Nos últimos anos, tem havido um aumento significativo na conscientização sobre as alterações climáticas e nos esforços para combatê-las. No entanto, muitos especialistas argumentam que ainda não fizemos o suficiente para enfrentar esse desafio global de maneira eficaz.<p>
 
@@ -213,26 +232,29 @@
           
           A luta contra as alterações climáticas é um desafio urgente e complexo, mas com ações determinadas e coletivas, podemos fazer a diferença e criar um futuro mais sustentável para as próximas gerações. </p>
 			</div>
-      <style>
-        .video {
-          display: block;
-          align-items: flex-start;
-        }
-        
-        .video h2 {
-          text-align: left;
-        }
-        
-        .video iframe {
-          width:  1100px;
-          height: 619px;
-        }
-        </style>
-        
-        <div class="video">
-          <h2>Vê neste video o impacto das alterações climáticas no nosso planeta </h2><br>
-          <iframe src="video/video 1.mp4" frameborder="0" allowfullscreen></iframe>
-        </div>
+ <style>
+.video {
+  display: block;
+  align-items: flex-start;
+}
+
+.video h2 {
+  text-align: left;
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+}
+</style>
+
+<div class="video">
+  <h2>Vê neste video o impacto das alterações climáticas no nosso planeta</h2><br>
+  <video id="meuVideo" controls>
+    <source src="video/video 1.mp4" type="video/mp4">
+  </video>
+</div>
+
         
     
     
@@ -240,7 +262,9 @@
                    
       <!-- Adicione isso no final do HTML -->
     <script src="script.js" defer></script>
-    
+    document.getElementById('meuVideo').addEventListener('click', function() {
+  this.play();
+});
     <footer>
         <div class="content">
           <div class="left box">

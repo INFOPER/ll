@@ -26,12 +26,19 @@ button:hover {
     opacity: 0.8;
 }
 
-body{
-    height: 100vh;
-    background-color: var(--body-color);
-    display: grid;
-    place-items: center;
-    overflow-x: hidden;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--body-color);
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 0 10px;
+  }
 }
 
 body.dark{
@@ -380,7 +387,7 @@ a.Sobre:hover {
   }
   
 a.Contacto:hover {
-    color: #d8db17;
+    color: #babd00;
   }
 
 /* Hero */

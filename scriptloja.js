@@ -236,7 +236,7 @@ function renderItems() {
     itemEl.onclick = () => addItem(idx, item.id)
     itemEl.innerHTML = `
       <img src="${item.image}" alt="" />
-      <button>Adicionar ao Carrinho</button>
+      <button>Ver Artigo</button>
     `
     itemsEl.appendChild(itemEl)
   })
